@@ -34,9 +34,9 @@ function! s:vim_completes_me(shift_tab)
 
   if pumvisible()
     if a:shift_tab
-      return dirs[!dir]
-    else
       return dirs[dir]
+    else
+      return dirs[!dir]
     endif
   endif
 
